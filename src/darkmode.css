@@ -1,0 +1,273 @@
+/* Dark Mode Global Styles */
+
+/* Hero Section Dark Mode */
+body.dark-mode .hero {
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+}
+
+body.dark-mode .hero::before {
+  background: linear-gradient(
+    135deg,
+    rgba(5, 150, 105, 0.1),
+    rgba(16, 185, 129, 0.1)
+  );
+}
+
+body.dark-mode .name {
+  color: #f9fafb;
+}
+
+body.dark-mode .stat-item p {
+  color: #9ca3af;
+}
+
+/* About Section Dark Mode */
+body.dark-mode .about {
+  background: #111827;
+}
+
+body.dark-mode .about-text h3 {
+  color: #f9fafb;
+}
+
+body.dark-mode .about-text p {
+  color: #9ca3af;
+}
+
+body.dark-mode .image-container {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .category-title {
+  color: #f9fafb;
+}
+
+body.dark-mode .skill-card {
+  background: #1f2937;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  border-color: #374151;
+}
+
+body.dark-mode .skill-card:hover {
+  box-shadow: 0 8px 30px rgba(5, 150, 105, 0.3);
+  border-color: #059669;
+}
+
+body.dark-mode .skill-card p {
+  color: #d1d5db;
+}
+
+body.dark-mode .experience-card {
+  background: linear-gradient(135deg, #1f2937, #111827);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  border-color: #374151;
+}
+
+body.dark-mode .experience-card:hover {
+  box-shadow: 0 8px 30px rgba(5, 150, 105, 0.2);
+}
+
+body.dark-mode .experience-card p {
+  color: #9ca3af;
+}
+
+/* Education Section Dark Mode */
+body.dark-mode .education {
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+}
+
+body.dark-mode .timeline-content {
+  background: #1f2937;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+  border-left-color: #10b981;
+}
+
+body.dark-mode .timeline-content:hover {
+  box-shadow: 0 8px 35px rgba(5, 150, 105, 0.2);
+}
+
+body.dark-mode .timeline-header h3 {
+  color: #f9fafb;
+}
+
+body.dark-mode .timeline-institution {
+  color: #10b981;
+}
+
+body.dark-mode .timeline-description {
+  color: #9ca3af;
+}
+
+body.dark-mode .achievements {
+  background: #111827;
+  border-left-color: #10b981;
+}
+
+body.dark-mode .achievements h4 {
+  color: #f9fafb;
+}
+
+body.dark-mode .achievements li {
+  color: #d1d5db;
+}
+
+body.dark-mode .cert-card {
+  background: #1f2937;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  border-color: #374151;
+}
+
+body.dark-mode .cert-card:hover {
+  box-shadow: 0 8px 30px rgba(5, 150, 105, 0.3);
+  border-color: #10b981;
+}
+
+body.dark-mode .cert-card h4 {
+  color: #f9fafb;
+}
+
+body.dark-mode .cert-issuer {
+  color: #9ca3af;
+}
+
+/* Projects Section Dark Mode */
+body.dark-mode .projects {
+  background: #111827;
+}
+
+body.dark-mode .project-card {
+  background: #1f2937;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .project-card:hover {
+  box-shadow: 0 12px 40px rgba(5, 150, 105, 0.2);
+}
+
+body.dark-mode .project-content h3 {
+  color: #f9fafb;
+}
+
+body.dark-mode .project-content p {
+  color: #9ca3af;
+}
+
+body.dark-mode .projects-cta {
+  background: linear-gradient(135deg, #1f2937, #111827);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .projects-cta p {
+  color: #f9fafb;
+}
+
+/* Contact Section Dark Mode */
+body.dark-mode .contact {
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+}
+
+body.dark-mode .contact-details h3 {
+  color: #f9fafb;
+}
+
+body.dark-mode .contact-details p {
+  color: #9ca3af;
+}
+
+body.dark-mode .info-item {
+  background: #1f2937;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .info-item:hover {
+  box-shadow: 0 6px 25px rgba(5, 150, 105, 0.2);
+}
+
+body.dark-mode .info-text h4 {
+  color: #f9fafb;
+}
+
+body.dark-mode .info-text a,
+body.dark-mode .info-text p {
+  color: #9ca3af;
+}
+
+body.dark-mode .info-text a:hover {
+  color: #10b981;
+}
+
+body.dark-mode .contact-form-container {
+  background: #1f2937;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+  background: #111827;
+  border-color: #374151;
+  color: #e5e7eb;
+}
+
+body.dark-mode .form-group input::placeholder,
+body.dark-mode .form-group textarea::placeholder {
+  color: #6b7280;
+}
+
+body.dark-mode .form-group input:focus,
+body.dark-mode .form-group textarea:focus {
+  background: #1f2937;
+  border-color: #10b981;
+  box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.1);
+}
+
+/* Footer Dark Mode */
+body.dark-mode .footer {
+  background: linear-gradient(135deg, #0f172a 0%, #020617 100%);
+}
+
+body.dark-mode .footer-section h3 {
+  color: #f9fafb;
+}
+
+body.dark-mode .footer-description {
+  color: #d1d5db;
+}
+
+body.dark-mode .footer-links a {
+  color: #d1d5db;
+}
+
+body.dark-mode .footer-links a:hover {
+  color: #10b981;
+}
+
+body.dark-mode .footer-info li {
+  color: #d1d5db;
+}
+
+body.dark-mode .footer-social a {
+  background: rgba(255, 255, 255, 0.05);
+  color: #d1d5db;
+}
+
+body.dark-mode .footer-social a:hover {
+  background: linear-gradient(135deg, #059669, #10b981);
+  color: white;
+}
+
+body.dark-mode .footer-bottom {
+  color: #9ca3af;
+}
+
+body.dark-mode .footer-rights {
+  color: #6b7280;
+}
+
+body.dark-mode .scroll-to-top {
+  background: linear-gradient(135deg, #10b981, #059669);
+  box-shadow: 0 4px 20px rgba(16, 185, 129, 0.4);
+}
+
+body.dark-mode .scroll-to-top:hover {
+  box-shadow: 0 6px 25px rgba(16, 185, 129, 0.5);
+}
