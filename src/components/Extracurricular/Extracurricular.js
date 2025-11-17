@@ -1,61 +1,67 @@
 import React from "react";
 import "./Extracurricular.css";
+import activity1 from "../../assets/images/activity1.jpg";
+import activity3 from "../../assets/images/activity3.jpeg";
+import activity4 from "../../assets/images/activity4.jpg";
+import activity5 from "../../assets/images/activity5.jpg";
+import activity6 from "../../assets/images/activity6.jpg";
+import activity8 from "../../assets/images/activity8.png";
 
 const Extracurricular = () => {
   const activities = [
     {
-      title: "Sports Captain",
-      organization: "University Sports Club",
-      period: "2022 - 2023",
+      title: "Participant",
+      organization: "EXE- Flagship Game Development Competition",
+      period: "2025",
       description:
         "Led the university cricket team to regional championship victory. Organized inter-university tournaments and training sessions.",
-      image: "https://via.placeholder.com/400x300/059669/ffffff?text=Sports",
-      skills: ["Leadership", "Team Management", "Strategy"],
+      image: activity1,
+      skills: ["Team Work", "Team Management", "Strategy"],
     },
     {
-      title: "Tech Club President",
-      organization: "University Technology Society",
-      period: "2021 - 2023",
+      title: "SLUG XV Gold Medal Winner",
+      organization: "Sri Lanka University Games 2025",
+      period: "2025",
       description:
         "Organized hackathons, coding workshops, and tech talks. Managed a team of 50+ members and collaborated with industry partners.",
-      image: "https://via.placeholder.com/400x300/10b981/ffffff?text=Tech+Club",
+      image: activity3,
       skills: ["Event Management", "Public Speaking", "Networking"],
     },
     {
-      title: "Volunteer Coordinator",
-      organization: "Community Development Initiative",
-      period: "2020 - Present",
+      title: "Technical Volunteer",
+      organization: "ICARC 2025",
+      period: "2025",
       description:
         "Coordinated community service projects including teaching programming to underprivileged students and organizing donation drives.",
-      image: "https://via.placeholder.com/400x300/059669/ffffff?text=Volunteer",
+      image: activity4,
       skills: ["Social Impact", "Coordination", "Mentoring"],
     },
     {
-      title: "Debate Team Member",
-      organization: "Inter-University Debate Society",
-      period: "2019 - 2022",
+      title: "Video Editing Team Lead",
+      organization: "InspireIEEE 2025",
+      period: "2025",
       description:
         "Competed in national debate competitions. Won Best Speaker award in 2021. Enhanced critical thinking and communication skills.",
-      image: "https://via.placeholder.com/400x300/10b981/ffffff?text=Debate",
+      image: activity5,
       skills: ["Communication", "Critical Thinking", "Research"],
     },
     {
-      title: "Music Band Lead",
-      organization: "University Music Society",
-      period: "2020 - 2023",
+      title: "Bronz Medalist",
+      organization: "Inter University Games 2024",
+      period: "2024",
       description:
         "Lead guitarist and vocalist for university band. Performed at multiple university events and inter-college festivals.",
-      image: "https://via.placeholder.com/400x300/059669/ffffff?text=Music",
+      image: activity6,
       skills: ["Creativity", "Collaboration", "Performance"],
     },
     {
-      title: "Environmental Club Member",
-      organization: "Green Campus Initiative",
-      period: "2021 - Present",
+      title: "Active Member",
+      organization: "Lumetrix Media",
+      period: "2024-Present",
       description:
         "Participated in tree planting campaigns, beach cleanups, and sustainability awareness programs across campus.",
       image:
-        "https://via.placeholder.com/400x300/10b981/ffffff?text=Environment",
+        activity8,
       skills: ["Environmental Awareness", "Teamwork", "Initiative"],
     },
   ];
@@ -91,21 +97,21 @@ const Extracurricular = () => {
                   <span className="org-icon">🏛️</span>
                   {activity.organization}
                 </p>
-                <p className="activity-description">{activity.description}</p>
+                {/* <p className="activity-description">{activity.description}</p> */}
 
-                <div className="activity-skills">
+                {/* <div className="activity-skills">
                   {activity.skills.map((skill, idx) => (
                     <span key={idx} className="skill-badge">
                       {skill}
                     </span>
                   ))}
-                </div>
+                </div> */}
               </div>
             </div>
           ))}
         </div>
 
-        <div className="activities-summary" data-aos="fade-up">
+        {/* <div className="activities-summary" data-aos="fade-up">
           <div className="summary-item">
             <div className="summary-icon">🏆</div>
             <h4>10+</h4>
@@ -126,7 +132,7 @@ const Extracurricular = () => {
             <h4>100+</h4>
             <p>Community Hours</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

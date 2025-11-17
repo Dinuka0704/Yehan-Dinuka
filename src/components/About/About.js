@@ -25,17 +25,21 @@ import {
   SiTypescript,
   SiNextdotjs,
   SiFirebase,
+  SiAdobexd,
+  SiAdobephotoshop,
+  SiAdobeillustrator,
+  SiAdobepremierepro,
 } from "react-icons/si";
 import "./About.css";
-import aboutImage from "../../assets/images/about-image.png";
+import aboutImage from "../../assets/images/hero-img.png";
 
 const About = () => {
   const programmingLanguages = [
     { name: "JavaScript", icon: <FaJs /> },
     { name: "TypeScript", icon: <SiTypescript /> },
-    { name: "Python", icon: <FaPython /> },
     { name: "Java", icon: <FaJava /> },
     { name: "PHP", icon: <FaPhp /> },
+    { name: "Python", icon: <FaPython /> },
     { name: "HTML5", icon: <FaHtml5 /> },
     { name: "CSS3", icon: <FaCss3Alt /> },
   ];
@@ -76,10 +80,7 @@ const About = () => {
         <div className="about-content">
           <div className="about-image" data-aos="fade-right">
             <div className="image-container">
-              <img
-                src={aboutImage}
-                alt="About Yehan Dinuka"
-              />
+              <img src={aboutImage} alt="About Yehan Dinuka" />
             </div>
           </div>
 
@@ -98,7 +99,11 @@ const About = () => {
               deployment. I'm constantly learning and adapting to new
               technologies to deliver the best solutions.
             </p>
-            <a href="#contact" className="btn btn-primary">
+            <a
+              href="/Dinuka_Gimhana_CV.pdf"
+              download="Dinuka_Gimhana_CV.pdf"
+              className="btn btn-primary"
+            >
               Download CV
             </a>
           </div>
@@ -188,40 +193,44 @@ const About = () => {
         </div>
 
         {/* Experience Stats */}
+        <h3 className="category-title ">
+          {/* <span className="icon-wrapper">🗄️</span> */}
+          Design Tools Experience
+        </h3>
         <div className="experience-section" data-aos="fade-up">
           <div className="experience-card">
             <div className="exp-icon">
-              <span>📊</span>
+              <FaFigma />
             </div>
             <h3>100%</h3>
             <p>Figma</p>
           </div>
           <div className="experience-card">
             <div className="exp-icon">
-              <span>📱</span>
+              <SiAdobexd />
             </div>
-            <h3>100%</h3>
+            <h3>75%</h3>
             <p>Adobe XD</p>
           </div>
           <div className="experience-card">
             <div className="exp-icon">
-              <span>🎨</span>
+              <SiAdobephotoshop />
             </div>
-            <h3>85%</h3>
+            <h3>90%</h3>
             <p>Adobe Photoshop</p>
           </div>
           <div className="experience-card">
             <div className="exp-icon">
-              <span>✏️</span>
+              <SiAdobeillustrator />
             </div>
             <h3>60%</h3>
             <p>Adobe Illustrator</p>
           </div>
           <div className="experience-card">
             <div className="exp-icon">
-              <span>🎬</span>
+              <SiAdobepremierepro />
             </div>
-            <h3>70%</h3>
+            <h3>85%</h3>
             <p>Adobe Premiere</p>
           </div>
         </div>

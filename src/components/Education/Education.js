@@ -1,68 +1,66 @@
 import React from "react";
 import { FaGraduationCap, FaUniversity, FaCalendarAlt } from "react-icons/fa";
 import "./Education.css";
+import cert1 from "../../assets/images/cert1.jpg";
+import cert2 from "../../assets/images/cert2.jpg";
 
 const Education = () => {
   const educationData = [
     {
       degree: "Bachelor of Science in Computer Science",
-      institution: "University of Technology",
-      period: "2020 - 2024",
+      institution: "Sabaragamuwa University of Sri Lanka",
+      period: "Reading",
       description:
         "Specialized in Software Engineering and Web Development. Completed major projects in full-stack development and UI/UX design.",
-      achievements: [
-        "GPA: 3.8/4.0",
-        "Dean's List: 6 semesters",
-        "Best Final Year Project Award",
-      ],
+      achievements: ["GPA: 3.6/4.0"],
     },
     {
       degree: "Advanced Level - Physical Science",
-      institution: "Royal College",
-      period: "2017 - 2019",
+      institution: "St.Joseph Vaz College Wennappuwa",
+      period: "2019 - 2021",
       description:
         "Focused on Mathematics, Physics, and Chemistry with strong analytical and problem-solving skills.",
-      achievements: [
-        "A grades in all subjects",
-        "District Rank: Top 10",
-        "Science Club President",
-      ],
+      achievements: ["C grades in all subjects"],
     },
     {
       degree: "Ordinary Level",
-      institution: "Royal College",
-      period: "2012 - 2016",
+      institution: "St.Joseph Vaz College Wennappuwa",
+      period: "2016 - 2017",
       description:
         "Completed with excellent results in Mathematics, Science, and Technology subjects.",
-      achievements: [
-        "9 A grades",
-        "School Champion - Mathematics Olympiad",
-        "IT Club Member",
-      ],
+      achievements: ["8 A 1 B grades", "Participant - Science Olympiad"],
     },
   ];
 
   const certifications = [
     {
-      name: "Full Stack Web Development",
-      issuer: "Coursera",
-      year: "2023",
-    },
-    {
-      name: "UI/UX Design Professional",
-      issuer: "Google",
-      year: "2023",
-    },
-    {
-      name: "AWS Certified Cloud Practitioner",
-      issuer: "Amazon Web Services",
-      year: "2022",
-    },
-    {
-      name: "React Advanced Patterns",
+      name: "CSS and Bootstrap and Javascript and PHP Programming all in one complete course",
       issuer: "Udemy",
-      year: "2022",
+      year: "2024",
+      image:
+        cert1,
     },
+    {
+      name: "Mastering Solidity, the Ethereum Programming Language",
+      issuer: "Udemy",
+      year: "2025",
+      image:
+        cert2,
+    },
+    // {
+    //   name: "AWS Certified Cloud Practitioner",
+    //   issuer: "Amazon Web Services",
+    //   year: "2022",
+    //   image:
+    //     "https://via.placeholder.com/400x300/059669/ffffff?text=AWS+Certificate",
+    // },
+    // {
+    //   name: "React Advanced Patterns",
+    //   issuer: "Udemy",
+    //   year: "2022",
+    //   image:
+    //     "https://via.placeholder.com/400x300/10b981/ffffff?text=React+Certificate",
+    // },
   ];
 
   return (
@@ -124,12 +122,19 @@ const Education = () => {
                   data-aos="zoom-in"
                   data-aos-delay={index * 100}
                 >
-                  <div className="cert-icon">
-                    <FaGraduationCap />
+                  <div className="cert-image">
+                    <img src={cert.image} alt={cert.name} />
+                    <div className="cert-overlay">
+                      <div className="cert-icon">
+                        <FaGraduationCap />
+                      </div>
+                    </div>
                   </div>
-                  <h4>{cert.name}</h4>
-                  <p className="cert-issuer">{cert.issuer}</p>
-                  <span className="cert-year">{cert.year}</span>
+                  <div className="cert-details">
+                    <h4>{cert.name}</h4>
+                    <p className="cert-issuer">{cert.issuer}</p>
+                    <span className="cert-year">{cert.year}</span>
+                  </div>
                 </div>
               ))}
             </div>

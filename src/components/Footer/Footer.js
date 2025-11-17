@@ -53,8 +53,8 @@ const Footer = () => {
           <div className="footer-section">
             <h3>Contact Info</h3>
             <ul className="footer-info">
-              <li>Email: yehandinuka@example.com</li>
-              <li>Phone: +94 77 123 4567</li>
+              <li>Email: dinuka.gimhana2001@gmail.com</li>
+              <li>Phone: +94 76 628 7531</li>
               <li>Location: Colombo, Sri Lanka</li>
             </ul>
           </div>
@@ -63,7 +63,7 @@ const Footer = () => {
             <h3>Follow Me</h3>
             <div className="footer-social">
               <a
-                href="https://github.com/yehandinuka"
+                href="https://github.com/Dinuka0704"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -71,7 +71,7 @@ const Footer = () => {
                 <FaGithub />
               </a>
               <a
-                href="https://linkedin.com/in/yehandinuka"
+                href="https://linkedin.com/in/Dinuka-gimhana-4746a329b/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -79,7 +79,7 @@ const Footer = () => {
                 <FaLinkedin />
               </a>
               <a
-                href="https://wa.me/yourphonenumber"
+                href="https://wa.me/0766287531"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"

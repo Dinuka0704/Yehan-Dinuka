@@ -1,57 +1,63 @@
 import React from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import "./Projects.css";
+import proj1 from "../../assets/images/proj1.png";
+import proj2 from "../../assets/images/proj3.png";
+import proj3 from "../../assets/images/proj4.png";
+import proj4 from "../../assets/images/proj5.png";
+import proj5 from "../../assets/images/proj6.png";
+
 
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "LedgerVote",
       description:
-        "A full-featured e-commerce platform with product management, shopping cart, payment integration, and admin dashboard.",
+        "secure blockchain-powered voting platform ensuring transparency, anonymity, and integrity in elections",
       image:
-        "https://via.placeholder.com/600x400/059669/ffffff?text=E-Commerce",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      github: "https://github.com/yehandinuka/ecommerce-platform",
+        proj1,
+      technologies: ["React", "Spring Boot", "MySQL", "Solidity"],
+      github: "https://github.com/LedgerVote",
+      demo: "https://www.linkedin.com/posts/dinuka-gimhana-4746a329b_capstoneproject-blockchainvoting-smartcontracts-activity-7353803689339314176-KZMM?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEiJ-NgBphlxQiAWOnXbfFoFVGO5q7qbjig",
+    },
+    {
+      title: "Inventory Management System",
+      description:
+        "Engineered a Dockerized inventory app with a secure API, transaction ledgers, and role-based access control using React and Node.js.",
+      image:
+        proj2,
+      technologies: ["React.js","Node.js", "Express.js", "Tailwindcss", "PostgreSQL"],
+      github: "https://github.com/Dinuka0704/inventory-management-system",
       demo: "#",
     },
     {
-      title: "Task Management System",
+      title: "Sport Center Management System",
       description:
-        "A collaborative task management application with real-time updates, team collaboration, and progress tracking features.",
+        "Developed a Laravel-based application to manage sports equipment, featuring student ID borrowing, automated fine tracking, and detailed inventory categorization (usable vs. broken).",
       image:
-        "https://via.placeholder.com/600x400/10b981/ffffff?text=Task+Manager",
-      technologies: ["React", "Firebase", "Material-UI", "Redux"],
-      github: "https://github.com/yehandinuka/task-management",
-      demo: "#",
-    },
-    {
-      title: "Portfolio Website Builder",
-      description:
-        "A drag-and-drop portfolio website builder with customizable templates, real-time preview, and hosting capabilities.",
-      image:
-        "https://via.placeholder.com/600x400/059669/ffffff?text=Portfolio+Builder",
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+        proj3,
+      technologies: ["Laravel", "MySQL", "Boostrap"],
       github: "https://github.com/yehandinuka/portfolio-builder",
       demo: "#",
     },
     {
-      title: "Social Media Dashboard",
+      title: "Kolonna Store Track",
       description:
-        "Analytics dashboard for managing multiple social media accounts with scheduling, analytics, and engagement tracking.",
+        " A web-based Store Management System developed for the Kolonna Divisional Secretariat to automate operations and manage inventory efficiently",
       image:
-        "https://via.placeholder.com/600x400/10b981/ffffff?text=Social+Dashboard",
+        proj4,
       technologies: ["React", "Express", "PostgreSQL", "Chart.js"],
       github: "https://github.com/yehandinuka/social-dashboard",
       demo: "#",
     },
     {
-      title: "Recipe Sharing Platform",
+      title: "Movie Hub",
       description:
-        "A platform for sharing and discovering recipes with user profiles, ratings, comments, and recipe collections.",
+        "A responsive movie discovery app built with Next.js 14 (App Router), TypeScript, and Tailwind CSS, utilizing the TMDb API for real-time data fetching.",
       image:
-        "https://via.placeholder.com/600x400/059669/ffffff?text=Recipe+Platform",
-      technologies: ["React", "Django", "PostgreSQL", "AWS S3"],
-      github: "https://github.com/yehandinuka/recipe-platform",
+        proj5,
+      technologies: ["Next.js", "TMDB API", "Tailwindcss"],
+      github: "https://github.com/Dinuka0704/movie_hub",
       demo: "#",
     },
     {
@@ -63,37 +69,7 @@ const Projects = () => {
       technologies: ["React Native", "Node.js", "MongoDB", "Redux"],
       github: "https://github.com/yehandinuka/fitness-tracker",
       demo: "#",
-    },
-    {
-      title: "Real Estate Marketplace",
-      description:
-        "Property listing platform with advanced search, virtual tours, agent profiles, and inquiry management system.",
-      image:
-        "https://via.placeholder.com/600x400/059669/ffffff?text=Real+Estate",
-      technologies: ["React", "Spring Boot", "MySQL", "Google Maps API"],
-      github: "https://github.com/yehandinuka/real-estate-marketplace",
-      demo: "#",
-    },
-    {
-      title: "Online Learning Platform",
-      description:
-        "Educational platform with course management, video streaming, quizzes, certificates, and progress tracking.",
-      image:
-        "https://via.placeholder.com/600x400/10b981/ffffff?text=Learning+Platform",
-      technologies: ["Next.js", "Node.js", "MongoDB", "Stripe"],
-      github: "https://github.com/yehandinuka/learning-platform",
-      demo: "#",
-    },
-    {
-      title: "Weather Forecast App",
-      description:
-        "Weather application with real-time updates, 7-day forecast, location-based weather alerts, and interactive maps.",
-      image:
-        "https://via.placeholder.com/600x400/059669/ffffff?text=Weather+App",
-      technologies: ["React", "OpenWeather API", "Chart.js", "Mapbox"],
-      github: "https://github.com/yehandinuka/weather-app",
-      demo: "#",
-    },
+    },    
   ];
 
   return (
@@ -157,7 +133,7 @@ const Projects = () => {
         <div className="projects-cta" data-aos="fade-up">
           <p>Want to see more of my work?</p>
           <a
-            href="https://github.com/yehandinuka"
+            href="https://github.com/Dinuka0704"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-primary"

@@ -6,6 +6,7 @@ import {
   FaPaperPlane,
 } from "react-icons/fa";
 import "./Contact.css";
+// import contact from "../../assets/images/Photo.png";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -14,6 +15,7 @@ const Contact = () => {
     subject: "",
     message: "",
   });
+  const [isSending, setIsSending] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -22,12 +24,46 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log("Form submitted:", formData);
-    alert("Thank you for your message! I will get back to you soon.");
-    setFormData({ name: "", email: "", subject: "", message: "" });
+    setIsSending(true);
+
+    // Replace with your Web3Forms Access Key
+    const accessKey = "db07d7c2-ecb7-4242-be44-cf2403ca0757";
+
+    const formDataToSend = {
+      access_key: accessKey,
+      name: formData.name,
+      email: formData.email,
+      subject: formData.subject,
+      message: formData.message,
+    };
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formDataToSend),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        alert("Thank you for your message! I will get back to you soon.");
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        alert("Failed to send message. Please try again or email me directly.");
+        console.error("Web3Forms error:", result);
+      }
+    } catch (error) {
+      alert("Failed to send message. Please try again or email me directly.");
+      console.error("Error:", error);
+    } finally {
+      setIsSending(false);
+    }
   };
 
   return (
@@ -40,12 +76,12 @@ const Contact = () => {
 
         <div className="contact-content">
           <div className="contact-info" data-aos="fade-right">
-            <div className="contact-image">
+            {/* <div className="contact-image">
               <img
-                src="https://via.placeholder.com/500x600/059669/ffffff?text=Get+In+Touch"
+                src={contact}
                 alt="Contact"
               />
-            </div>
+            </div> */}
 
             <div className="contact-details">
               <h3>Get In Touch</h3>
@@ -136,9 +172,13 @@ const Contact = () => {
                 ></textarea>
               </div>
 
-              <button type="submit" className="btn btn-primary submit-btn">
+              <button
+                type="submit"
+                className="btn btn-primary submit-btn"
+                disabled={isSending}
+              >
                 <FaPaperPlane />
-                Send Message
+                {isSending ? "Sending..." : "Send Message"}
               </button>
             </form>
           </div>
