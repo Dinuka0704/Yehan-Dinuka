@@ -31,12 +31,14 @@
 .about-image {
   position: relative;
   max-width: 450px;
+  margin: 0 auto;
 }
 
 .image-container {
   position: relative;
-  width: 450px;
-  height: 450px;
+  width: 100%;
+  max-width: 450px;
+  aspect-ratio: 1;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 20px 60px rgba(5, 150, 105, 0.3);
@@ -189,6 +191,11 @@
 
   .about-image {
     order: -1;
+    max-width: 350px;
+  }
+
+  .image-container {
+    max-width: 350px;
   }
 
   .skills-grid {
@@ -203,16 +210,26 @@
 }
 
 @media (max-width: 568px) {
+  .about-image {
+    max-width: 280px;
+  }
+
+  .image-container {
+    max-width: 280px;
+  }
+
   .about-text h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    line-height: 1.4;
   }
 
   .about-text p {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
 
   .category-title {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     flex-direction: column;
     text-align: center;
   }
@@ -224,31 +241,40 @@
   }
 
   .skills-grid {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 12px;
   }
 
   .skill-card {
-    padding: 20px 15px;
+    padding: 18px 10px;
   }
 
   .skill-icon {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+  }
+
+  .skill-card p {
+    font-size: 0.9rem;
   }
 
   .experience-section {
     grid-template-columns: 1fr 1fr;
+    gap: 15px;
   }
 
   .experience-card {
-    padding: 20px;
+    padding: 20px 15px;
   }
 
   .exp-icon {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .experience-card h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+  }
+
+  .experience-card p {
+    font-size: 0.9rem;
   }
 }
