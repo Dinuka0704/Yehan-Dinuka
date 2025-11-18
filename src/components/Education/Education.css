@@ -20,6 +20,7 @@
   position: absolute;
   left: 20px;
   top: 0;
+  margin-left: 25px;
   height: 100%;
   width: 3px;
   background: linear-gradient(180deg, #059669, #10b981, #059669);
@@ -331,6 +332,10 @@
 }
 
 @media (max-width: 568px) {
+  .education-timeline::before{
+    margin-left: 15px;
+  }
+  
   .timeline-header h3 {
     font-size: 1.1rem;
   }

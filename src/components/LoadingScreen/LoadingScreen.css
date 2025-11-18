@@ -19,6 +19,11 @@
 
 .loading-content {
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .loading-screen .logo-animation {
