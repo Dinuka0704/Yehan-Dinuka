@@ -100,8 +100,8 @@ const About = () => {
               technologies to deliver the best solutions.
             </p>
             <a
-              href="/Dinuka_Gimhana_CV.pdf"
-              download="Dinuka_Gimhana_CV.pdf"
+              href="/Dinuka Gimhana_CV.pdf"
+              download="Dinuka Gimhana_CV.pdf"
               className="btn btn-primary"
             >
               Download CV
